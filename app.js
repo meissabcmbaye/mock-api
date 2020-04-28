@@ -86,7 +86,7 @@ app.put('/api/admins/:id', (req, res, next) => {
     else {
         res.status(404).json({ message: 'Cet admin n\'existe pas.' })
     }
-})>
+})
 
 app.post('/api/login', (req, res, next) => {
     admin = req.body
