@@ -3,11 +3,13 @@ const bodyParser = require('body-parser')
 const app = express()
 
 let admins = require('./data/admins')
+let roles = require('./data/roles')
+
 const adminLogged = {
     "firstname": "Papi",
     "lastname": "Mbaye",
     "email": "admin@test.com",
-    "role": "superadmin",
+    "role": "SUPER_ADMIN",
     "token": "token_de_papi"
 }
 
@@ -19,6 +21,22 @@ app.use((req, res, next) => {
 })
 
 app.use(bodyParser.json())
+
+app.get('/api/roles', (req, res, next) => {
+    res.status(200).json({ roles })
+})
+
+app.get('/api/roles/:id', (req, res, next) => {
+    const id = parseInt(req.params.id)
+    const result = roles.filter(r => r.id === id)
+    if (result[0]) {
+        const role = result[0]
+        res.status(200).json({ role })
+    }
+    else {
+        res.status(404).json({ message: 'Ce rôle n\'existe pas.' })
+    }
+})
 
 app.get('/api/admins', (req, res, next) => {
     res.status(200).json({ admins })
