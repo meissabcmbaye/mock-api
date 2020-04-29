@@ -5,7 +5,7 @@ const ADMINS = [
         "lastname": "Doe",
         "surname": "jhonny",
         "email": "john.doe@test.com",
-        "birthDate": "05/11/1992",
+        "birthDate": "1992-05-11",
         "role": {
             "id": 1,
             "name": "ADMIN"
@@ -17,7 +17,7 @@ const ADMINS = [
         "firstname": "Jane",
         "lastname": "Doe",
         "surname": "jane",
-        "birthDate": "06/11/1992",
+        "birthDate": "1992-10-25",
         "email": "jane.doe@test.com",
         "role": {
             "id": 1,
@@ -30,7 +30,7 @@ const ADMINS = [
         "firstname": "Bobo",
         "lastname": "Baldé",
         "surname": "bobo",
-        "birthDate": "10/11/1992",
+        "birthDate": "1994-06-08",
         "email": "bobo.balde@test.com",
         "role": {
             "id": 1,
