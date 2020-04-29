@@ -9,7 +9,10 @@ const adminLogged = {
     "firstname": "Papi",
     "lastname": "Mbaye",
     "email": "admin@test.com",
-    "role": "SUPER_ADMIN",
+    "role": {
+        "id": 1,
+        "name": "ADMIN"
+    },
     "token": "token_de_papi"
 }
 

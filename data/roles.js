@@ -5,7 +5,7 @@ const ROLES = [
     },
     {
         "id": 2,
-        "name": "SUPPPORT"
+        "name": "SUPPORT"
     },
     {
         "id": 3,
